@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Dialog - Default functionality</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#dialog" ).dialog();
+  } );
+  </script>
+</head>
+<body>
+
+ <div id="dialog" title="FORGOT YOUR PASSWORD?">
+    <div class="enter">
+       <form name="form-password" action=".php" method="post">
+          <label>ENTER YOUR<br>
+                  EMAIL
+          </label>
+          <input type="text" name="text">
+       </form>
+    </div>
+    <div class="clearfix"></div>
+    <button type="reset">RESET PASSWORD</button>
+    <p>OR</p>
+    <a href="#" class="log_in" >
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+        Log In Using Facebook</a>
+    </div>
+</body>
+</html>
